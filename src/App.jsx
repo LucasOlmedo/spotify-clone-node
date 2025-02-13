@@ -1,6 +1,12 @@
+import Header from "./components/Header.jsx"
+import Main from "./components/Main.jsx"
+
 const App = () => {
   return (
-    <h1>Hello World!</h1>
+    <>
+      <Header />
+      <Main />
+    </>
   )
 }
 
