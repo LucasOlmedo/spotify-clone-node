@@ -1,12 +1,15 @@
 import spotifyLogo from "../assets/spotify-logo.png";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <div className="header">
-      <img src={spotifyLogo} alt="logo" />
-      <a href="/">
+      <Link to="/">
+        <img src={spotifyLogo} alt="logo" />
+      </Link>
+      <Link to="/">
         <h1>Spotify Clone</h1>
-      </a>
+      </Link>
     </div>
   );
 };
