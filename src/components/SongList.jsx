@@ -13,9 +13,11 @@ const SongList = ({ songs }) => {
           <SongItem key={song.id} {...song} index={index} />
         ))}
 
-      <p className="song-list__see-more" onClick={() => setItems(items + 5)}>
-        Ver mais
-      </p>
+      {songs.length > items ? (
+        <p className="song-list__see-more" onClick={() => setItems(items + 5)}>
+          Ver mais
+        </p>
+      ) : <></>}
     </div>
   );
 };
