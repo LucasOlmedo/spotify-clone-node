@@ -14,4 +14,4 @@ USER node
 
 EXPOSE 5173
 
-CMD ["npm", "dev"]
+CMD ["npm", "run", "dev"]
